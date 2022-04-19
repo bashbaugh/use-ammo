@@ -1,0 +1,16 @@
+{
+  "name": "use-ammo",
+  "version": "0.1.0",
+  "description": "Bullet physics hooks for @react-three/fiber",
+  "repository": "https://github.com/bashbaugh/use-ammo.git",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Benjamin Ashbaugh",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c"
+  }
+}

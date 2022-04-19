@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "lib": ["DOM", "ESNext", "WebWorker", "ScriptHost"],
+    "target": "ES6",
+    "importHelpers": true,
+    "declaration": true,
+    // "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true
+    // "noEmit": true,
+    // "emitDeclarationOnly": true,
+    // "removeComments": true
+  }
+}
