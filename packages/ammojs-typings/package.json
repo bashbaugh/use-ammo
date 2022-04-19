@@ -1,0 +1,14 @@
+{
+  "name": "ammojs-typings",
+  "version": "0.1.0",
+  "repository": "https://github.com/bashbaugh/use-ammo.git",
+  "typings": "ammo.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "ts-node build.ts"
+  },
+  "devDependencies": {
+    "@types/webidl2": "^23.13.6",
+    "webidl2": "^24.2.1"
+  }
+}

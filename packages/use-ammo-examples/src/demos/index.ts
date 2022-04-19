@@ -1,8 +1,6 @@
 import { lazy } from 'react'
 
-const fileDemos = [
-  'Cubes',
-] as const
+const fileDemos = ['Cubes'] as const
 
 const folderDemos = [] as const
 
@@ -12,11 +10,17 @@ export type Demo = typeof demoList[number]
 export const isDemo = (v: unknown): v is Demo => demoList.includes(v as Demo)
 
 type FolderDemo = typeof folderDemos[number]
-const isFolderDemo = (v: unknown): v is FolderDemo => folderDemos.includes(v as FolderDemo)
+const isFolderDemo = (v: unknown): v is FolderDemo =>
+  folderDemos.includes(v as FolderDemo)
 
 export const demos = demoList.reduce((o, demo) => {
   o[demo] = {
-    Component: lazy(() => import(isFolderDemo(demo) ? `./${demo}/index.tsx` : `./demo-${demo}.tsx`)),
+    Component: lazy(
+      () =>
+        import(
+          isFolderDemo(demo) ? `./${demo}/index.tsx` : `./demo-${demo}.tsx`
+        )
+    ),
   }
   return o
 }, {} as Record<Demo, { Component: React.LazyExoticComponent<React.ComponentType> }>)

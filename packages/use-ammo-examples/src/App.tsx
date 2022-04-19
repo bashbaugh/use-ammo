@@ -1,5 +1,11 @@
 import { Suspense } from 'react'
-import { HashRouter as Router, Link, Route, Routes, useMatch } from 'react-router-dom'
+import {
+  HashRouter as Router,
+  Link,
+  Route,
+  Routes,
+  useMatch,
+} from 'react-router-dom'
 import styled from 'styled-components'
 
 import { demoList, demos, isDemo } from './demos'
@@ -44,7 +50,10 @@ function Intro() {
         </Routes>
       </Suspense>
       <Demos />
-      <a href="https://github.com/bashbaugh/use-ammo" style={{ color: 'white' }}>
+      <a
+        href="https://github.com/bashbaugh/use-ammo"
+        style={{ color: 'white' }}
+      >
         Github
       </a>
     </Page>
@@ -59,7 +68,11 @@ function Demos() {
     <DemoPanel>
       {demoList.map((demoName, key) => (
         <Link key={key} to={`/demo/${demoName}`} title={demoName}>
-          <Spot style={{ backgroundColor: demoName === routeName ? 'salmon' : 'white' }} />
+          <Spot
+            style={{
+              backgroundColor: demoName === routeName ? 'salmon' : 'white',
+            }}
+          />
         </Link>
       ))}
     </DemoPanel>
