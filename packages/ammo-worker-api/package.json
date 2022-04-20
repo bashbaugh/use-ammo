@@ -15,11 +15,11 @@
     "build-ammo-types": "ts-node ammo-types/build-types"
   },
   "dependencies": {
-    "ammo.js": "kripken/ammo.js",
-    "ammojs-typings": "./packages/ammojs-typings"
+    "ammo.js": "kripken/ammo.js"
   },
   "devDependencies": {
     "@types/webidl2": "^23.13.6",
+    "rollup-plugin-web-worker-loader": "^1.6.1",
     "webidl2": "^24.2.1"
   }
 }

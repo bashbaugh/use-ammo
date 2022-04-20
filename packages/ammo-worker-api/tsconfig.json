@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src/", "ammo-types"],
+  "include": ["src/", "ammo-types", "worker.d.ts"],
   "compilerOptions": {
     "outDir": "./dist",
     "typeRoots": ["node_modules/@types", "ammo-types"],

@@ -1,5 +1,6 @@
+// TODO this
 declare module "ammo.js/builds/ammo.wasm.js" {
-  const a: typeof Ammo;
+  const a: any
   export = a
 }
 
