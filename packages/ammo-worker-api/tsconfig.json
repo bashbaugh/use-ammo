@@ -1,8 +1,9 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src/"],
+  "include": ["src/", "ammo-types"],
   "compilerOptions": {
     "outDir": "./dist",
-    "lib": ["DOM", "esnext"]
+    "typeRoots": ["node_modules/@types", "ammo-types"],
+    "types": ["node"]
   }
 }

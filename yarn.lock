@@ -421,6 +421,13 @@ acorn@^8.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
   integrity sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==
 
+ammo.js@kripken/ammo.js:
+  version "0.0.2"
+  resolved "https://codeload.github.com/kripken/ammo.js/tar.gz/7a574978fb28164a0a1510831eae52958edb4265"
+
+ammojs-typings@./packages/ammojs-typings:
+  version "0.1.0"
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"

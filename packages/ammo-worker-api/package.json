@@ -11,6 +11,15 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c"
+    "build": "rm -rf dist && rollup -c",
+    "build-ammo-types": "ts-node ammo-types/build-types"
+  },
+  "dependencies": {
+    "ammo.js": "kripken/ammo.js",
+    "ammojs-typings": "./packages/ammojs-typings"
+  },
+  "devDependencies": {
+    "@types/webidl2": "^23.13.6",
+    "webidl2": "^24.2.1"
   }
 }
